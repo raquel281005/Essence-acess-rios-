@@ -1,0 +1,8 @@
+// script.js
+let cart = [];
+
+function addToCart(productName) {
+    cart.push(productName);
+    alert(productName + " foi adicionado ao carrinho.");
+    console.log(cart); // Aqui você pode mostrar o conteúdo do carrinho no console
+}

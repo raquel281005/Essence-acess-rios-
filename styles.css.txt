@@ -1,0 +1,129 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background-color: #D9A6A1; /* Rose Gold */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #B18F6A; /* Dourado suave */
+    text-align: center;
+    font-size: 2rem;
+}
+
+#home {
+    background-color: #F7E6D9; /* Fundo suave para o banner */
+    padding: 50px 0;
+    text-align: center;
+}
+
+#home h2 {
+    color: #D9A6A1; /* Rose Gold */
+    font-size: 3rem;
+}
+
+#home p {
+    color: #B18F6A;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.sobre, .produtos, .contato {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #B18F6A; /* Dourado */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D9A6A1; /* Rose Gold */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #D9A6A1; /* Rose Gold */
+    color: white;
+    padding: 15px;
+}
