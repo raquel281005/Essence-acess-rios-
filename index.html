@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esence Semijoias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Esence Semijoias</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner de boas-vindas -->
+    <section id="home" class="banner">
+        <h2>Bem-vindo à Esence Semijoias!</h2>
+        <p>Joias sofisticadas para momentos inesquecíveis.</p>
+    </section>
+
+    <!-- Sobre a loja -->
+    <section id="sobre" class="sobre">
+        <h2>Sobre a Esence</h2>
+        <p>A Esence é uma marca de semijoias que oferece design sofisticado, elegância e qualidade, com peças desenvolvidas para realçar a sua beleza.</p>
+    </section>
+
+    <!-- Catálogo de Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Nossas Joias</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="semijoia1.jpg" alt="Anel de Ouro">
+                <h3>Anel de Ouro 18k</h3>
+                <p>R$ 450,00</p>
+                <button onclick="addToCart('Anel de Ouro 18k')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="semijoia2.jpg" alt="Brinco de Pérola">
+                <h3>Brinco de Pérola</h3>
+                <p>R$ 220,00</p>
+                <button onclick="addToCart('Brinco de Pérola')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="semijoia3.jpg" alt="Colar de Cristal">
+                <h3>Colar de Cristal</h3>
+                <p>R$ 350,00</p>
+                <button onclick="addToCart('Colar de Cristal')">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <h2>Fale Conosco</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Esence Semijoias. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
